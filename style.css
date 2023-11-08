@@ -8,6 +8,10 @@
     box-sizing: border-box;
 }
 
+ * {
+    @apply m-0 p-0 
+ }
+
 .a{
     display: flex;
     align-items: center;
