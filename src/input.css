@@ -1,0 +1,175 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+    * {
+        @apply font-Intsa box-border;
+    }  
+    .a {
+        @apply flex items-center mr-4;
+    }
+    #navbar {
+        @apply flex flex-col bg-palblue;
+    }
+    #navbar__logo {
+        @apply w-fit;
+    }
+    #navbar__menu {
+        @apply flex items-center xs:relative xs:w-screen xs:h-[30vh] xs:flex xs:flex-col xs:justify-center xs:items-center xs:hidden
+         sm:relative sm:w-screen sm:h-40fullscreen sm:flex sm:pt-3 sm:flex-col sm:justify-center sm:items-center sm:hidden
+         md:relative md:w-screen md:h-35fullscreen md:flex-col md:justify-center md:items-center md:mt-8 md:hidden lg:flex lg:items-center lg:justify-between;
+    }
+    .navbar__search__div {
+        @apply flex items-center justify-center xs:hidden xs:w-20 sm:mt-4 sm:w-full md:mt-4 md:w-full lg:w-[30%] 2xl:w-[40%];
+    }
+    #navbar__search {
+        @apply flex w-[calc(100%-72px)] border-transparent px-6 py-[12px] items-start xs:w-20;
+    }
+    .navbar__search__icon__div {
+        @apply px-6 py-[12px] bg-white w-[72px];
+    }
+    #navbar__search__icon {
+        @apply fill-white h-[24px];
+    }
+    .navbar__menu__div {
+        @apply flex ml-12 items-center flex-col xs:ml-0 xs:w-full xs:flex xs:flex-row xs:m-[15px] xs:items-center xs:justify-center sm:mx-0 sm:my-15px md:mx-0 md:my-2.5 lg:ml-4;
+    }
+    .navbar__menu__title {
+        @apply text-white text-center text-xs font-medium leading-4 w-17 h-8 mt-1 xs:ml-[10px];
+    }
+    .navbar__lower {
+        @apply flex justify-between px-24 py-5 h-16 bg-darkblue xs:p-8 xs:h-fit sm:p-8 sm:h-fit md:p-8 md:h-fit;
+    }
+    .two__item {
+        @apply flex flex-col w-full pt-5 pr-6 pb-2.125 pl-6 justify-center items-center border border-solid border-palgray bg-white;
+    }
+    .category {
+        @apply w-8.125 h-8.125 flex-shrink-0;
+    }
+    .two__item__title {
+        @apply text-paldarkgray text-center mt-4 text-sm not-italic font-normal leading-5;
+    }
+    #two {
+        @apply grid grid-cols-custom gap-10 mt-6   xs:grid-cols-custom;
+    }
+    #main__section {
+        @apply px-24 py-5 xs:p-8 sm:py-5 sm:px-8 md:px-8 md:py-3.5;
+    }
+    #footer {
+        @apply flex flex-col flex-wrap h-22.5 flex-shrink-0 bg-palgrayF4 xs:block xs:h-auto xs:relative sm:block sm:h-auto md:block md:h-auto;
+    }
+    .footer__upper {
+        @apply flex mt-16 justify-around xs:p-8 xs:flex-wrap xs:block sm:p-8 sm:flex-wrap md:p-8 md:flex-wrap md:grid md:grid-cols-25per lg:px-24 lg:gap-4 lg:justify-between xl:px-24 xl:justify-between 2xl:px-24 2xl:justify-between;
+    }
+    .footer__upper__title{
+        @apply text-palgray3F text-sm not-italic font-semibold leading-5;
+    }
+    .footer__list__item {
+        @apply text-palgray52 text-sm leading-5;    
+    }
+    .footer__list {
+        @apply mt-4;
+    }
+    .navbar__list__contact {
+        @apply flex ml-8 xs:m-0 sm:m-0 md:m-0;
+    }
+    .footer__list__contact {
+        @apply flex;
+    }
+    .footer__list__number {
+        @apply text-palgray52 text-sm font-semibold leading-5;
+    }
+    ul>li {
+        @apply list-none;
+    }
+    .footer__socials {
+        @apply flex gap-4 mt-4;
+    }
+    .footer__copyright {
+        @apply relative top-2 text-palgray71 text-center p-8 text-xs leading-4 xl:px-24 2xl:px-24;
+    }
+    hr {
+        @apply m-auto bg-palgrayE4 w-90% h-0.06;
+    }
+    .footer__subscribe {
+        @apply border-none inline-flex px-5 py-3 justify-center items-center bg-palblue700 text-white text-sm font-semibold leading-5 mt-1.62;
+    }
+    #navbar__upper {
+        @apply flex px-24 py-5 justify-between items-center xs:py-5 xs:px-8 sm:p-8 sm:m-0 sm:flex-col md:p-8 md:m-0 md:flex-col lg:gap-3 lg:px-24 lg:py-3.5;
+    }
+    .navbar__lower__p {
+        @apply text-white text-sm not-italic leading-6 ml-2;
+    }
+    .navbar__lower__one {
+        @apply flex flex-col  lg:flex-row xl:flex-row 2xl:flex-row;
+    }
+    .navbar__lower__two {
+        @apply flex xs:flex-col sm:flex-col sm:justify-between md:flex-col;
+    }
+    .footer__input {
+        @apply flex h-11 w-20.56 py-3 pl-4 pr-11.18 items-center flex-shrink-0 border-palblue300 bg-white xs:w-[70vw] xs:p-[8px] md:w-halfscreen md:p-2; 
+    }
+    #one {
+        @apply flex justify-between items-center;
+    }
+    .one__view__div {
+        @apply flex items-center;
+    }
+    .one__title {
+        @apply text-palgray800 text-xl not-italic font-semibold leading-7 xs:text-[1rem];
+    }
+    .one__view {
+        @apply text-palblue700 font-bold mr-2 leading-5 xs:text-[0.8rem] xs:m-0;
+    }
+    .main__one {
+        @apply flex justify-between px-24 py-3.5 xs:mt-4 xs:block xs:p-0;
+    }
+    .main__item__img {
+        @apply relative xs:m-auto xs:w-90fullscreen;
+    }
+    #hamburger {
+        @apply hidden xs:flex xs:w-8 xs:h-8 sm:w-8 sm:h-8 sm:block md:flex md:w-8 md:h-8;
+    }
+    .main__item__heading {
+        @apply relative ml-4 -top-8.25 text-white text-lg not-italic font-bold leading-7;
+    }
+    .main__item__p {
+        @apply relative text-white ml-4 text-sm not-italic font-normal leading-5 -top-8.25;
+    }
+    .main__item__arrow {
+        @apply relative -top-8.25 text-white ml-4 text-sm font-normal leading-5;
+    }
+    .main__item__view {
+        @apply relative text-white ml-4 text-sm font-normal leading-5 -top-24;
+    }
+    .card__section {
+        @apply px-24 py-3.5 mt-4 flex flex-wrap justify-center gap-12 flex-shrink-0 xs:p-8 sm:p-8 md:p-8;
+    }
+    .image {
+        @apply h-full
+    }
+    .card__section__card {
+        @apply relative;
+    }
+    .heading {
+        @apply  text-white text-xl font-bold leading-7 pl-4 ;
+    }
+    .text {
+        @apply  text-white mt-3 text-sm font-normal leading-5 pl-4 xs:w-[60vw] sm:w-60fullscreen;
+    }
+    .btn {
+        @apply flex pl-4 text-white text-xs font-semibold leading-4 mt-3;
+    }
+
+    .footer__section {
+        @apply xs:m-8 xs:p-0 sm:mt-4 sm:m-4 md:m-8;
+    }
+    .navbar__upper__menubar {
+        @apply xs:w-full xs:flex xs:items-center xs:justify-between sm:w-full sm:flex sm:justify-between md:flex md:justify-between md:w-full;
+    }
+    .cont__absolute {
+        @apply absolute bottom-0;
+    }
+}   

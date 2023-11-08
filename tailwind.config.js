@@ -1,0 +1,80 @@
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: ["./index.html"],
+  theme: {
+    screens: {
+      'xs': {'max': '600px'},
+      'sm': {'min':'601px', 'max':'768px',},
+      'md': {'min':'769px', 'max':'992px',},
+      'lg': {'min':'993px', 'max':'1200px',},
+      'xl': {'min':'1201px', 'max':'1400px',},
+      '2xl': '1401px',
+    },
+    extend: {
+      fontFamily: {
+        Intsa: ['Inter', 'sans-serif'],
+      },
+      colors: {
+        palblue: "#0C304B",
+        darkblue: '#082032',
+        palblue300: "#7FC7FB",
+        palblue700: "#196195",
+        palgray: "#D4D4D8",
+        paldarkgray: "#27272A",
+        palgrayF4: "#F4F4F5",
+        palgray3F: "#3F3F46",
+        palgray52: "#52525B",
+        palgray71: "#71717A",
+        palgrayE4: "#E4E4E7",
+        palgray800: "#27272A",  
+      },
+      width: {
+        184: '46.9375rem',
+        100: '25rem',
+        17: '4.75rem',
+        '13.75': '13.75rem',
+        "8.125": "8.125rem",
+        '90%': '90%',
+        '20.56': "20.5625rem",
+        '31': '31rem',
+        140: '35rem',
+        120: '30rem',
+        halfscreen: '50vw',
+        '90fullscreen': '90vw',
+        '85fullscreen': '85vw',
+        '60fullscreen': '60vw',
+  
+      },
+      spacing: {
+        '2.125': '2.125rem',
+        '0.72': '0.72rem',
+        '1.62': '1.62rem',
+        '11.18': "11.1875rem",
+        '-8.25': '-8.25rem',
+        33: '8.25rem',
+        41: '10.25rem',
+        2.5: '10px' ,
+        '15px': '15px',
+      },
+      height: {
+        "8.125": "8.125rem",
+        "22.5": "22.5rem",
+        '0.06': "0.0625rem",
+        '15.56': '15.5625rem',
+        '35fullscreen': '35vh',
+        '40fullscreen': '40vh',
+      },
+      gridTemplateColumns: {
+        custom: "repeat(auto-fit,minmax(13.75rem,1fr))",
+        customxl: "repeat(auto-fit, minmax(25rem, 1fr))",
+        custommd: "repeat(auto-fit, minmax(20rem ,1fr))",
+        '25per': "25% 25% 25%",
+      },
+      fontSize: {
+        '1.3rem': '1.3rem',
+        '0.8rem': '0.8rem',
+      }
+    },
+  },
+  plugins: [],
+}
